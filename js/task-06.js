@@ -1,6 +1,7 @@
 const validationInput = document.querySelector("#validation-input");
 
 validationInput.addEventListener("focus", () => {
+  validationInput.value = null;
   validationInput.classList.remove("valid", "invalid");
 });
 
