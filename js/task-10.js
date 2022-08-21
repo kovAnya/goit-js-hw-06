@@ -11,6 +11,7 @@ createButton.addEventListener("click", createButtonClick);
 
 destroyButton.addEventListener("click", () => {
   boxes.innerHTML = "";
+  input.value = null;
 });
 
 function createButtonClick() {
@@ -30,4 +31,5 @@ function createBoxes(amount) {
     markup.push(newDiv);
   }
   boxes.append(...markup);
+  input.value = null;
 }
